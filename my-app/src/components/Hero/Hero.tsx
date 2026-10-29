@@ -96,8 +96,8 @@ const Hero = ({ session }: HeroProps) => {
         </div>
 
         <h1 className="font-space font-extrabold text-[clamp(48px,10vw,140px)] leading-[0.8] text-white uppercase italic mb-12 tracking-tighter select-none">
-          Sinners <span className="text-transparent [-webkit-text-stroke:1px_rgba(255,255,255,0.4)]">Studio</span><br />
-          <span className="text-white/90">Ecosystem</span>
+          Tech<span className="text-transparent [-webkit-text-stroke:1px_rgba(255,255,255,0.4)]">Sinners</span><br />
+         
         </h1>
 
         {/* Buttons Centering Fix applied here with flex-center and adjusting flex-wrap */}
