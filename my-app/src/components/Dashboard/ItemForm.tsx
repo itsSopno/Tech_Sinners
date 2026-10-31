@@ -29,8 +29,8 @@ const ItemForm = ({ type }: ItemFormProps) => {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setLoading(true);
-    const baseUrl = "https://t-mark-4.vercel.app";
-    const endpoint = type === "keycap" ? "/api/keycaps/create" : type === "keyboard" ? "/api/keyboard/create" : "/api/all-products/create";
+    const baseUrl = process.env.NEXT_PUBLIC_API_URL;
+    const endpoint = type === "keycap" ? "/api/keycaps" : type === "keyboard" ? "/api/keyboard" : "/api/all-products";
 
     try {
       const response = await fetch(`${baseUrl}${endpoint}`, {
